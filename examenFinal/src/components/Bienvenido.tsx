@@ -9,10 +9,7 @@ export default function Bienvenido() {
         <div className="product-boxes">
           {bienvenido.boxes.map((box, i) => (
             <div className="product-box" key={box} style={{ zIndex: bienvenido.boxes.length - i }}>
-              <div className="product-box-face">
-                <span className="product-box-brand">SIC · JAC</span>
-                <span className="product-box-name">{box.toUpperCase()}</span>
-              </div>
+              
             </div>
           ))}
         </div>
