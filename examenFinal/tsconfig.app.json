@@ -22,5 +22,5 @@
     "erasableSyntaxOnly": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src", "../../examenFinal/src/components/Footer.tsx"]
+  "include": ["src", "src/components/Footer.tsx"]
 }

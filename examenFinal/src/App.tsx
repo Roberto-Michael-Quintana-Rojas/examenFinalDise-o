@@ -1,6 +1,8 @@
 import './App.css'
 import Bienvenido from './components/Bienvenido'
 import Caracteristicas from './components/Caracteristicas'
+import Clientes from './components/Clientes'
+import Footer from './components/Footer'
 import Header from './components/Header'
 import Hero from './components/Hero'
 import InfoCards from './components/InfoCards'
@@ -14,6 +16,8 @@ function App() {
       <Bienvenido />
       <Caracteristicas />
       <Modulos />
+      <Clientes />
+      <Footer />
     </div>
   )
 }
