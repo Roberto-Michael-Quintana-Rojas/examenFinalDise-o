@@ -364,3 +364,162 @@ body {
   font-weight: 600;
   box-shadow: var(--sombra);
 }
+
+
+/* -------------------------------------------caracteristicas */
+
+.caracteristicas {
+  padding: 70px 0;
+}
+
+.caracteristicas-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+.caracteristicas h2 {
+  color: var(--azul-oscuro);
+  font-size: 1.3rem;
+}
+
+.intro {
+  margin-bottom: 20px;
+}
+
+.check-list {
+  display: grid;
+  gap: 10px;
+}
+
+.check-list li {
+  position: relative;
+  padding-left: 22px;
+  font-size: 0.9rem;
+  color: var(--gris-texto);
+}
+
+.check-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--azul-claro);
+  font-weight: 700;
+}
+
+.objetivos-col {
+  display: grid;
+  gap: 36px;
+}
+
+.objetivos-block {
+  display: grid;
+  grid-template-columns: 56px 1fr;
+  gap: 18px;
+}
+
+.objetivos-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--azul-claro);
+  color: var(--blanco);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.objetivos-block h3 {
+  color: var(--azul-oscuro);
+  font-size: 1.05rem;
+}
+
+.arrow-list {
+  display: grid;
+  gap: 8px;
+}
+
+.arrow-list li {
+  position: relative;
+  padding-left: 18px;
+  font-size: 0.9rem;
+  color: var(--gris-texto);
+}
+
+.arrow-list li::before {
+  content: "›";
+  position: absolute;
+  left: 0;
+  color: var(--naranja);
+  font-weight: 700;
+}
+
+/* -------------------------------------------modulos */
+
+.modulos {
+  background: var(--gris-fondo);
+  padding: 70px 0;
+}
+
+.modulos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.modulo-card {
+  background: var(--blanco);
+  border-radius: var(--radio);
+  padding: 32px 24px;
+  text-align: center;
+  box-shadow: var(--sombra);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modulo-card.is-destacado {
+  grid-column: span 3;
+  max-width: 380px;
+  margin: 0 auto;
+  border: 2px solid var(--naranja);
+}
+
+.modulo-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--naranja);
+  color: var(--blanco);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.modulo-card h3 {
+  font-size: 0.95rem;
+  color: var(--texto-oscuro);
+  min-height: 44px;
+}
+
+.precio {
+  color: var(--naranja);
+  font-size: 1.4rem;
+  font-weight: 800;
+  margin-bottom: 14px;
+}
+
+.modulo-card ul {
+  margin-bottom: 20px;
+  display: grid;
+  gap: 6px;
+}
+
+.modulo-card ul li {
+  font-size: 0.85rem;
+  color: var(--gris-texto);
+}
+
+
