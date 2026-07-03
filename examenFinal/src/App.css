@@ -522,4 +522,175 @@ body {
   color: var(--gris-texto);
 }
 
+/* -------------------------------------------clientes */
+.clientes {
+  padding: 60px 0;
+  text-align: center;
+}
 
+.clientes h2 {
+  color: var(--azul-oscuro);
+  font-size: 1.1rem;
+  letter-spacing: 0.05em;
+  margin-bottom: 32px;
+}
+
+.clientes-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.cliente-logo {
+  background: var(--gris-fondo);
+  border-radius: var(--radio);
+  padding: 20px 10px;
+  font-weight: 700;
+  color: var(--gris-texto);
+  font-size: 0.85rem;
+}
+
+/* --------------------------------------- footer */
+
+.site-footer {
+  background: var(--azul-oscuro);
+  color: rgba(255, 255, 255, 0.85);
+  padding: 60px 0 24px;
+}
+
+.site-footer h2 {
+  color: var(--blanco);
+  text-align: center;
+  font-size: 1.1rem;
+  letter-spacing: 0.05em;
+  margin-bottom: 40px;
+}
+
+.sucursales-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  margin-bottom: 40px;
+}
+
+.sucursal h4 {
+  color: var(--naranja);
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.sucursal p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.8rem;
+  margin: 0 0 4px;
+  line-height: 1.5;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  padding-top: 24px;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 12px;
+}
+
+.footer-socials a {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--blanco);
+}
+
+.footer-socials a:hover {
+  background: var(--naranja);
+}
+
+.credit {
+  text-align: center;
+  margin-top: 24px;
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+@media (max-width: 960px) {
+  .info-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .bienvenido-grid,
+  .caracteristicas-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .modulos-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .modulo-card.is-destacado {
+    grid-column: span 2;
+  }
+
+  .clientes-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .sucursales-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .nav-toggle {
+    display: flex;
+  }
+
+  .main-nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--blanco);
+    flex-direction: column;
+    padding: 16px 24px;
+    box-shadow: var(--sombra);
+    display: none;
+    gap: 14px;
+  }
+
+  .main-nav.is-open {
+    display: flex;
+  }
+
+  .hero-content {
+    margin: 0;
+    padding: 30px 20px;
+  }
+
+  .info-cards-grid,
+  .modulos-grid,
+  .clientes-grid,
+  .sucursales-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .modulo-card.is-destacado {
+    grid-column: span 1;
+  }
+
+  .product-boxes {
+    display: none;
+  }
+}
