@@ -24,6 +24,9 @@ body {
   background: var(--blanco);
 }
 
+
+/* -------------------------------------------wellcome */
+
 .bienvenido {
   background: var(--gris-fondo);
   padding: 70px 0 30px;
@@ -113,4 +116,133 @@ body {
   color: var(--gris-texto);
   border-top: 1px solid #e2e5ea;
   padding-top: 20px;
+}
+
+/* -------------------------------------------header */
+
+.site-header {
+  position: relative;
+  z-index: 20;
+  background: var(--blanco);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.06);
+}
+
+.topbar {
+  background: var(--azul-oscuro);
+}
+
+.topbar-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 6px 24px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.socials {
+  display: flex;
+  gap: 10px;
+}
+
+.social-link {
+  color: var(--blanco);
+  opacity: 0.85;
+  display: flex;
+  align-items: center;
+}
+
+.social-link:hover {
+  opacity: 1;
+  color: var(--naranja);
+}
+
+.header-main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 14px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.brand-mark {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 8px 16px;
+  border-radius: 4px;
+  background: linear-gradient(135deg, var(--azul) 0%, var(--azul-claro) 100%);
+  color: var(--blanco);
+  line-height: 1.1;
+}
+
+.brand-mark-top {
+  font-weight: 800;
+  font-size: 1.1rem;
+  letter-spacing: 0.05em;
+}
+
+.brand-mark-bottom {
+  font-size: 0.65rem;
+  font-weight: 700;
+  background: var(--naranja);
+  padding: 1px 6px;
+  border-radius: 2px;
+  margin-top: 3px;
+}
+
+.brand-mark-tag {
+  font-size: 0.55rem;
+  letter-spacing: 0.2em;
+  margin-top: 3px;
+  opacity: 0.85;
+}
+
+.main-nav {
+  display: flex;
+  gap: 28px;
+}
+
+.main-nav a {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--texto-oscuro);
+  padding: 8px 0;
+  position: relative;
+}
+
+.main-nav a:hover {
+  color: var(--naranja);
+}
+
+.main-nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background: var(--naranja);
+  transition: width 0.2s ease;
+}
+
+.main-nav a:hover::after {
+  width: 100%;
+}
+
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+}
+
+.nav-toggle span {
+  width: 24px;
+  height: 2px;
+  background: var(--texto-oscuro);
 }
