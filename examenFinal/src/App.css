@@ -1,0 +1,116 @@
+:root {
+  --azul-oscuro: #1c2b4a;
+  --azul: #1f6fb2;
+  --azul-claro: #2f9bd6;
+  --naranja: #e2691f;
+  --naranja-oscuro: #c8551a;
+  --gris-fondo: #f6f7f9;
+  --gris-texto: #5a6472;
+  --texto-oscuro: #263042;
+  --blanco: #ffffff;
+  --sombra: 0 10px 30px rgba(20, 30, 60, 0.08);
+  --radio: 6px;
+  --max-width: 1180px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  color: var(--texto-oscuro);
+  background: var(--blanco);
+}
+
+.bienvenido {
+  background: var(--gris-fondo);
+  padding: 70px 0 30px;
+}
+
+.bienvenido-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.product-boxes {
+  display: flex;
+  justify-content: center;
+}
+
+.product-box {
+  width: 120px;
+  height: 160px;
+  margin-left: -40px;
+  border-radius: 4px;
+  background: linear-gradient(160deg, var(--azul) 0%, var(--azul-oscuro) 100%);
+  box-shadow: var(--sombra);
+  transform: perspective(600px) rotateY(-8deg);
+  display: flex;
+  align-items: flex-end;
+  padding: 12px;
+}
+
+.product-box:first-child {
+  margin-left: 0;
+}
+
+.product-box-face {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  color: var(--blanco);
+}
+
+.product-box-brand {
+  font-size: 0.55rem;
+  letter-spacing: 0.1em;
+  background: var(--naranja);
+  padding: 2px 5px;
+  border-radius: 2px;
+  align-self: flex-start;
+}
+
+.product-box-name {
+  font-size: 0.7rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.bienvenido-copy h2 {
+  color: var(--naranja);
+  font-size: 1.5rem;
+}
+
+.period-list {
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px 24px;
+}
+
+.period-list li {
+  position: relative;
+  padding-left: 20px;
+  font-size: 0.9rem;
+  color: var(--gris-texto);
+}
+
+.period-list li::before {
+  content: "◍";
+  position: absolute;
+  left: 0;
+  color: var(--naranja);
+  font-size: 0.75rem;
+}
+
+.registro {
+  margin-top: 30px;
+  font-size: 0.85rem;
+  color: var(--gris-texto);
+  border-top: 1px solid #e2e5ea;
+  padding-top: 20px;
+}
