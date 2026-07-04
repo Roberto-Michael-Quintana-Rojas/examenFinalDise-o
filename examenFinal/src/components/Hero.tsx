@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import data from "../data/siteData.json";
-import heroImg from "../assets/hero.png";
 
 export default function Hero() {
   const slides = data.carousel;
@@ -16,7 +15,7 @@ export default function Hero() {
   const slide = slides[active];
 
   return (
-    <section id="inicio" className="hero" style={{ backgroundImage: `url(${heroImg})` }}>
+    <section id="inicio" className="hero" style={{ backgroundImage: `url('https://sic-jac.com/images/taxes-740202_1920.jpg?1783120684253')` }}>
       <div className="hero-overlay" />
       <div className="hero-content">
         <p className="hero-eyebrow">{slide.eyebrow} |</p>

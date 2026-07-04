@@ -40,6 +40,8 @@ body {
 }
 
 .product-boxes {
+  height: 260px;
+  background: url(https://sic-jac.com/images/sampledata/asimages/AC_YA_EDITADO.png) no-repeat center center;
   display: flex;
   justify-content: center;
 }
@@ -49,38 +51,11 @@ body {
   height: 160px;
   margin-left: -40px;
   border-radius: 4px;
-  background: linear-gradient(160deg, var(--azul) 0%, var(--azul-oscuro) 100%);
   box-shadow: var(--sombra);
   transform: perspective(600px) rotateY(-8deg);
   display: flex;
   align-items: flex-end;
   padding: 12px;
-}
-
-.product-box:first-child {
-  margin-left: 0;
-}
-
-.product-box-face {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  color: var(--blanco);
-}
-
-.product-box-brand {
-  font-size: 0.55rem;
-  letter-spacing: 0.1em;
-  background: var(--naranja);
-  padding: 2px 5px;
-  border-radius: 2px;
-  align-self: flex-start;
-}
-
-.product-box-name {
-  font-size: 0.7rem;
-  font-weight: 700;
-  line-height: 1.2;
 }
 
 .bienvenido-copy h2 {
@@ -376,6 +351,8 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 60px;
+  margin: 0 auto;
+  max-width: 1400px;
 }
 
 .caracteristicas h2 {
@@ -441,6 +418,7 @@ body {
 }
 
 .arrow-list li {
+  list-style: none;
   position: relative;
   padding-left: 18px;
   font-size: 0.9rem;
@@ -458,14 +436,18 @@ body {
 /* -------------------------------------------modulos */
 
 .modulos {
-  background: var(--gris-fondo);
+  background: url(https://sic-jac.com/templates/as002057/images/bg.row5.png) no-repeat center center;
+  background-size: cover;
   padding: 70px 0;
+  align-items: center;
 }
 
 .modulos-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
+  gap: 64px;
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
 .modulo-card {
@@ -473,6 +455,7 @@ body {
   border-radius: var(--radio);
   padding: 32px 24px;
   text-align: center;
+  width: 300px;
   box-shadow: var(--sombra);
   display: flex;
   flex-direction: column;
@@ -481,7 +464,7 @@ body {
 
 .modulo-card.is-destacado {
   grid-column: span 3;
-  max-width: 380px;
+  width: 300px;
   margin: 0 auto;
   border: 2px solid var(--naranja);
 }
@@ -518,6 +501,7 @@ body {
 }
 
 .modulo-card ul li {
+  list-style: none;
   font-size: 0.85rem;
   color: var(--gris-texto);
 }
@@ -556,6 +540,9 @@ body {
   background: var(--azul-oscuro);
   color: rgba(255, 255, 255, 0.85);
   padding: 60px 0 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .site-footer h2 {
